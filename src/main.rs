@@ -20,7 +20,7 @@ fn main() {
     let mut current_guess = 1;
 
     loop {
-        // check if we can still guess
+        // check if user can still guess
         if current_guess > MAXIMUM_GUESSES {
             println!("You lose!");
             println!("Answer was {secret_number}");
@@ -30,7 +30,7 @@ fn main() {
         println!("------------- Guess {current_guess} of {MAXIMUM_GUESSES} ---------------");
         println!("Please input your guess.");
 
-        // declare variable to that will receive user input
+        // declare variable that will receive users' input
         let mut guess = String::new();
 
         // fetch users' input
